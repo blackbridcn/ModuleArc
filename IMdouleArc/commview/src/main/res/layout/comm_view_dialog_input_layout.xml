@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:background="@color/base_transport"
+    android:orientation="vertical">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="@dimen/base_dimen15"
+        android:background="@drawable/comm_view_rounded_card_shape_bg"
+        android:padding="@dimen/base_dimen10">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen5"
+            android:ellipsize="end"
+            android:maxLength="@integer/base_int_16"
+            android:maxLines="@integer/base_int_1"
+            android:text="@string/comm_view_confirm"
+            android:textAllCaps="false"
+            android:textColor="@color/base_blue_selected"
+            android:textSize="@dimen/base_dimen_18sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/content"
+            android:layout_marginLeft="@dimen/base_dimen15"
+            app:layout_constraintTop_toBottomOf="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen5"
+            android:textColor="@color/base_red"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textSize="@dimen/base_dimen_12sp"
+            tools:ignore="MissingConstraints" />
+
+        <EditText
+            android:id="@+id/input_value"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginLeft="@dimen/base_dimen15"
+            android:layout_marginTop="@dimen/base_dimen15"
+            android:layout_marginRight="@dimen/base_dimen15"
+            android:background="@drawable/comm_view_edittext_grey_bg_shape"
+            android:gravity="center"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/content" />
+
+        <TextView
+            android:id="@+id/tv_negative"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen15"
+            android:layout_marginTop="@dimen/base_dimen15"
+            android:layout_weight="@integer/base_int_1"
+            android:background="@drawable/comm_view_rounded_bg_white_selector"
+            android:gravity="center"
+            android:paddingTop="@dimen/base_dimen3"
+            android:paddingBottom="@dimen/base_dimen3"
+            android:text="@string/comm_view_cancel"
+            android:textColor="@drawable/comm_view_font_blue_color_selector"
+            android:textSize="@dimen/base_dimen_16sp"
+            android:visibility="invisible"
+            app:layout_constraintHorizontal_weight="@integer/base_int_1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/tv_positive"
+            app:layout_constraintTop_toBottomOf="@+id/input_value" />
+
+        <TextView
+            android:id="@+id/tv_positive"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen10"
+            android:layout_marginTop="@dimen/base_dimen15"
+            android:layout_marginRight="@dimen/base_dimen15"
+            android:layout_weight="@integer/base_int_1"
+            android:background="@drawable/comm_view_rounded_bg_blue_selector"
+            android:gravity="center"
+            android:paddingTop="@dimen/base_dimen5"
+            android:paddingBottom="@dimen/base_dimen5"
+            android:text="@string/comm_view_confirm"
+            android:textColor="@drawable/comm_view_font_white_color_selector"
+            android:textSize="@dimen/base_dimen_16sp"
+            app:layout_constraintHorizontal_weight="@integer/base_int_1"
+            app:layout_constraintLeft_toRightOf="@+id/tv_negative"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/input_value" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

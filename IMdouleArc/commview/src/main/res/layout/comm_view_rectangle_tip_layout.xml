@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/base_dimen10"
+    android:paddingBottom="@dimen/base_dimen10"
+    android:background="@drawable/comm_view_purple_dashgap_border"
+    android:orientation="vertical">
+
+    <org.textview.StrokeTextView
+        android:id="@+id/tip_title"
+        android:layout_marginTop="@dimen/base_dimen15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/comm_view_warm_prompt"
+        android:textColor="@color/base_theme_blue"
+        android:textSize="@dimen/base_dimen_18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:innnerColor="#ffffff"
+        app:outerColor="#ff0000"
+        tools:ignore="MissingConstraints">
+
+    </org.textview.StrokeTextView>
+
+    <org.textview.algin.MulitTextView
+        android:id="@+id/tip_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/base_dimen8"
+        android:paddingRight="@dimen/base_dimen8"
+        android:layout_marginTop="@dimen/base_dimen15"
+        android:text="@string/comm_view_shortcut_tip_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip_title"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_marginTop="@dimen/base_dimen10"
+        android:id="@+id/tip_system"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/base_dimen10"
+        android:text="@string/comm_view_system_setting"
+        android:textColor="@color/base_theme_blue"
+        android:textSize="@dimen/base_dimen_16sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tip_content"
+        android:layout_marginBottom="@dimen/base_dimen10"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,132 @@
+<resources>
+    <!-- 下拉刷新组件自定义属性 -->
+    <declare-styleable name="PullToRefresh">
+        <attr name="header_indicator" format="string" />
+        <attr name="footer_indicator" format="string" />
+    </declare-styleable>
+
+    <!-- Application theme. -->
+    <style name="CommGlobalAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <!--引导页Theme主题  -->
+    <style name="CommSplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@drawable/comm_view_spleash_page_bg</item>
+    </style>
+
+    <style name="CommNoActionBarTheme" parent="Theme.AppCompat.Light.NoActionBar" />
+
+    <style name="CommDefaultDecoration">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_dimen05</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:background">@color/base_gray_light</item>
+    </style>
+
+    <style name="NoSpaceToobarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+    </style>
+
+    <style name="CommToolbarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/base_normal_blue</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="navigationIcon">@drawable/comm_view_back_icon_s</item>
+        <item name="titleTextColor">@color/base_white</item>
+    </style>
+
+    <style name="CommNoNavigationToolbarTheme" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+        <item name="contentInsetLeft">0dp</item>
+        <item name="contentInsetStartWithNavigation">0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">@color/base_normal_blue</item>
+        <item name="layout_constraintLeft_toLeftOf">parent</item>
+        <item name="layout_constraintRight_toRightOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+        <item name="titleTextColor">@color/base_white</item>
+    </style>
+
+    <!--透明背景主题-->
+    <style name="TransparentTheme" parent="@style/Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="DevelpoerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+
+    <style name="Theme.DialogActivity" parent="Theme.AppCompat.Light.Dialog">
+
+    </style>
+
+    <style name="comm_view_item_group_txt_icon_style">
+        <item name="android:background">@drawable/comm_view_layout_bg_ripple</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_dimen50</item>
+    </style>
+
+    <style name="comm_view_item_grey_divider_style">
+        <item name="android:background">@color/base_gray_light</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_dimen1</item>
+        <item name="android:layout_marginLeft">@dimen/base_dimen5</item>
+        <item name="android:layout_marginRight">@dimen/base_dimen5</item>
+    </style>
+
+    <style name="comm_view_padding_item_grey_divider_style">
+        <item name="android:background">@color/base_page_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/base_dimen1</item>
+        <item name="android:layout_marginLeft">@dimen/base_dimen50</item>
+    </style>
+
+    <style name="comm_view_confirm_textview_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/comm_view_rounded_bg_blue_selector</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">@dimen/base_dimen10</item>
+        <item name="android:textColor">@drawable/comm_view_font_white_color_selector</item>
+        <item name="android:textSize">@dimen/base_dimen_18sp</item>
+        <item name="android:layout_marginLeft">@dimen/base_dimen10</item>
+        <item name="android:layout_marginRight">@dimen/base_dimen10</item>
+        <item name="android:shadowColor">@color/base_black</item>
+    </style>
+
+
+    <!--BaseDialog样式-->
+    <style name="BaseDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--Dialog进入退出动画-->
+    <style name="EnterExitAnimation" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/anim_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/anim_bottom_out</item>
+    </style>
+
+
+</resources>

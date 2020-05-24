@@ -1,0 +1,57 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.peake.login">
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+   <!-- <application
+        android:name=".application.LoginApplication"
+        android:icon="${apk_icon}"
+        android:label="${apk_label}"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:theme="@style/CommGlobalAppTheme">
+
+        <activity
+            android:name="org.task.login.LoginHomeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommNoActionBarTheme" />
+
+        <activity
+            android:name="org.task.reset.ResetBaseInfoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommNoActionBarTheme" />
+
+        <activity
+            android:name="org.task.manager.AccoutnManagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommNoActionBarTheme">
+            <intent-filter>
+                <action android:name="com.peake.login.ACCOUNT.ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="org.task.secure.screenlock.ScreenLockActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommNoActionBarTheme" />
+
+        <activity
+            android:name="org.task.secure.screenlock.setting.ScreenLockHelpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommNoActionBarTheme">
+            <intent-filter>
+                <action android:name="com.peake.login.SCREENLOCK.ACTION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="org.task.secure.forget.ForgetAuthActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/CommNoActionBarTheme" />
+
+    </application>-->
+
+</manifest>

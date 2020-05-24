@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CommViewCircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout">
+        <attr name="horizontalSpacing" format="dimension" />
+        <attr name="verticalSpacing" format="dimension" />
+        <attr name="orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="debugDraw" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FlowLayout_LayoutParams">
+        <attr name="layout_newLine" format="boolean" />
+        <attr name="layout_horizontalSpacing" format="dimension" />
+        <attr name="layout_verticalSpacing" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentedGroup">
+        <attr name="sc_corner_radius" format="dimension" />
+        <attr name="sc_border_width" format="dimension" />
+        <attr name="sc_tint_color" format="color" />
+        <attr name="sc_checked_text_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="BaseNiceImageView">
+        <attr name="is_circle" format="boolean" />//是否为圆Image
+        <attr name="is_cover_src" format="boolean" />
+        <attr name="corner_radius" format="dimension" />//边框圆角
+        <attr name="corner_top_left_radius" format="dimension" />
+        <attr name="corner_top_right_radius" format="dimension" />
+        <attr name="corner_bottom_left_radius" format="dimension" />
+        <attr name="corner_bottom_right_radius" format="dimension" />
+        <attr name="border_width" format="dimension" />//外边框宽
+        <attr name="border_color" format="color" />//外边框颜色
+        <attr name="inner_border_width" format="dimension" />
+        <attr name="inner_border_color" format="color" />
+        <attr name="mask_color" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CommViewPowerEditText">
+        <!--图片资源-->
+        <attr name="clearDrawable" format="reference" />
+        <attr name="visibleDrawable" format="reference" />
+        <attr name="invisibleDrawable" format="reference" />
+        <!--按钮宽度大小-->
+        <attr name="BtnWidth" format="dimension" />
+        <!--按钮间距大小-->
+        <attr name="BtnSpacing" format="dimension" />
+        <!--边框颜色和样式-->
+        <attr name="styleColor" format="color" />
+        <attr name="borderStyle" format="string" />
+        <!--带手机号码格式的 右边删除的editText-->
+        <attr name="isTel" format="boolean" />
+    </declare-styleable>
+
+    <!--TextInputLayout自定义浮动标签 -->
+    <style name="BaseHintAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">@dimen/base_dimen_12sp</item>
+        <item name="android:textColor">@color/base_blue_selected</item>
+    </style>
+
+    <!--TextInputLayout自定义错误提示标签 -->
+    <style name="BaseErrorAppearance" parent="TextAppearance.AppCompat">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/base_red</item>
+    </style>
+
+    <!--滑动图块验证码-->
+    <declare-styleable name="CommViewSwipeCaptchaView">
+        <attr name="captchaWidth" format="dimension" />
+        <attr name="captchaHeight" format="dimension" />
+        <attr name="matchDeviation" format="dimension" />
+    </declare-styleable>
+
+    <!--跑馬燈效果-->
+    <declare-styleable name="CommViewMarqueeViewStyle">
+        <attr name="mvInterval" format="integer|reference" />
+        <attr name="mvAnimDuration" format="integer|reference" />
+        <attr name="mvTextSize" format="dimension|reference" />
+        <attr name="mvTextColor" format="color|reference" />
+        <attr name="mvSingleLine" format="boolean" />
+        <attr name="mvFont" format="reference" />
+        <attr name="mvGravity">
+            <enum name="left" value="0" />
+            <enum name="center" value="1" />
+            <enum name="right" value="2" />
+        </attr>
+        <attr name="mvDirection">
+            <enum name="bottom_to_top" value="0" />
+            <enum name="top_to_bottom" value="1" />
+            <enum name="right_to_left" value="2" />
+            <enum name="left_to_right" value="3" />
+        </attr>
+    </declare-styleable>
+
+    <!--Banner-->
+    <declare-styleable name="CommViewXBanner">
+        <attr name="isAutoPlay" format="boolean" />
+        <attr name="isHandLoop" format="boolean" />
+        <attr name="AutoPlayTime" format="integer|reference" />
+        <attr name="pointNormal" format="reference" />
+        <attr name="pointSelect" format="reference" />
+        <attr name="indicatorDrawable" format="reference" />
+        <attr name="pointsVisibility" format="boolean" />
+        <attr name="isTipsMarquee" format="boolean" />
+        <attr name="pointsPosition" format="enum">
+            <enum name="LEFT" value="0" />
+            <enum name="CENTER" value="1" />
+            <enum name="RIGHT" value="2" />
+        </attr>
+        <attr name="pointsContainerBackground" format="reference|color" />
+        <attr name="pointContainerPosition" format="enum">
+            <enum name="TOP" value="10" />
+            <enum name="BOTTOM" value="12" />
+        </attr>
+        <!-- 指示点容器左右内间距 -->
+        <attr name="pointContainerLeftRightPadding" format="dimension" />
+        <!-- 指示点上下内间距 -->
+        <attr name="pointTopBottomPadding" format="dimension" />
+        <!-- 指示点左右内间距 -->
+        <attr name="pointLeftRightPadding" format="dimension" />
+        <!-- 提示文案的文字颜色 -->
+        <attr name="tipTextColor" format="reference|color" />
+        <!-- 提示文案的文字大小 -->
+        <attr name="tipTextSize" format="dimension" />
+        <!--是否是数字指示器-->
+        <attr name="isShowNumberIndicator" format="boolean" />
+        <!-- 数字指示器背景 -->
+        <attr name="numberIndicatorBacgroud" format="reference" />
+        <!-- 当只有一页数据时是否显示指示器，默认值为false -->
+        <attr name="isShowIndicatorOnlyOne" format="boolean" />
+        <!-- 图片切换速度 -->
+        <attr name="pageChangeDuration" format="integer" />
+        <!--图片轮播框架展占位图-->
+        <attr name="placeholderDrawable" format="reference" />
+        <!--是否开启一屏显示多个模式 默认不开启-->
+        <attr name="isClipChildrenMode" format="boolean" />
+        <!--一屏显示多个左右间距-->
+        <attr name="clipChildrenLeftRightMargin" format="dimension" />
+        <!--一屏显示多个上下间距-->
+        <attr name="clipChildrenTopBottomMargin" format="dimension" />
+        <!--设置viewpager间距-->
+        <attr name="viewpagerMargin" format="dimension" />
+        <!--少于三张是否支持一屏多显模式-->
+        <attr name="isClipChildrenModeLessThree" format="boolean" />
+        <!--是否展示提示文案-->
+        <attr name="isShowTips" format="boolean" />
+        <!--banner轮播区域底部margin-->
+        <attr name="bannerBottomMargin" format="dimension" />
+        <!--设置viewPager ClipChildren-->
+        <attr name="viewPagerClipChildren" format="boolean" />
+        <!-- 占位图缩放模式 -->
+        <attr name="xscaleType" format="integer" />
+    </declare-styleable>
+
+    <!--RippleView-->
+    <declare-styleable name="CommViewRippleView">
+        <attr name="rv_alpha" format="integer" />
+        <attr name="rv_framerate" format="integer" />
+        <attr name="rv_rippleDuration" format="integer" />
+        <attr name="rv_zoomDuration" format="integer" />
+        <attr name="rv_color" format="color" />
+        <attr name="rv_centered" format="boolean" />
+        <attr name="rv_type" format="enum">
+            <enum name="simpleRipple" value="0" />
+            <enum name="doubleRipple" value="1" />
+            <enum name="rectangle" value="2" />
+        </attr>
+        <attr name="rv_ripplePadding" format="dimension" />
+        <attr name="rv_zoom" format="boolean" />
+        <attr name="rv_zoomScale" format="float" />
+    </declare-styleable>
+
+    <!--简单的标签控件LabelView-->
+    <declare-styleable name="LabelTextView">
+        <attr name="textColor" format="color" />
+        <attr name="text" format="string" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="numColor" format="color" />
+
+        <attr name="num" format="string" />
+
+        <attr name="numSize" format="dimension" />
+
+        <attr name="labelTopPadding" format="dimension" />
+        <attr name="labelCenterPadding" format="dimension" />
+        <attr name="labelBottomPadding" format="dimension" />
+        <attr name="numStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="textStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="direction">
+            <enum name="leftTop" value="-45" />
+            <enum name="rightTop" value="45" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="WidgetLabelView">
+        <attr name="label_distance" format="dimension" />
+        <attr name="label_height" format="dimension" />
+        <attr name="label_strokeWidth" format="dimension" />
+        <attr name="label_backgroundColor" format="color" />
+        <attr name="label_strokeColor" format="color" />
+        <attr name="label_text" format="string" />
+        <attr name="label_textSize" format="dimension" />
+        <attr name="label_textStyle" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="BOLD" value="1" />
+            <enum name="ITALIC" value="2" />
+            <enum name="BOLD_ITALIC" value="3" />
+        </attr>
+        <attr name="label_textColor" format="color" />
+        <attr name="label_visual" format="boolean" />
+        <attr name="label_orientation" format="enum">
+            <enum name="LEFT_TOP" value="1" />
+            <enum name="RIGHT_TOP" value="2" />
+            <enum name="LEFT_BOTTOM" value="3" />
+            <enum name="RIGHT_BOTTOM" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="RoundLabelTextView">
+
+        <attr name="backGroundColor" format="color" />
+        <attr name="labelLength" format="dimension" />
+        <attr name="textFlip" format="boolean" />
+        <attr name="radius" format="dimension" />
+        <attr name="angle" format="integer" />
+
+        <attr name="contentTextSize" format="dimension" />
+        <attr name="contentMarginStart" format="dimension" />
+        <attr name="contentMarginBottom" format="dimension" />
+        <attr name="contentTextColor" format="color" />
+        <attr name="contentText" format="string" />
+
+        <attr name="contentTextStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+        <attr name="topTextSize" format="dimension" />
+        <attr name="topTextColor" format="color" />
+        <attr name="topMarginStart" format="dimension" />
+        <attr name="topMarginBottom" format="dimension" />
+        <attr name="topText" format="string" />
+
+        <attr name="topTextStyle">
+            <enum name="normal" value="0" />
+            <enum name="italic" value="1" />
+            <enum name="bold" value="2" />
+        </attr>
+
+
+    </declare-styleable>
+
+    <declare-styleable name="CommViewImageTextView">
+        <attr name="titleText" format="string" />
+        <attr name="subText" format="string" />
+        <attr name="bgColor" format="color" />
+        <attr name="titleSize" format="dimension" />
+        <attr name="subSize" format="dimension" />
+        <attr name="titleColor" format="color" />
+        <attr name="subColor" format="color" />
+        <attr name="rectColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="CommTextNextIconLayout">
+        <attr name="LeftTitleText" format="string" localization="suggested" />
+        <attr name="RightValueText" format="string" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="CommTextRightBorderLayout">
+        <attr name="leftIcon" format="reference" />
+        <attr name="leftText" format="string" localization="suggested" />
+        <attr name="rightText" format="string" localization="suggested" />
+    </declare-styleable>
+
+    <declare-styleable name="CommIconTextNextLayout">
+        <attr name="icon" format="reference" />
+        <attr name="itemText" format="string" localization="suggested" />
+    </declare-styleable>
+
+
+    <!-- 自定义控件的名称 -->
+    <declare-styleable name="CommStrokeTextView">
+        <!-- 自定义的属性名称 和对应的单位 -->
+        <attr name="outerColor" format="color|reference" />
+        <attr name="innnerColor" format="color|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean" />
+        <attr name="matProg_barColor" format="color" />
+        <attr name="matProg_rimColor" format="color" />
+        <attr name="matProg_rimWidth" format="dimension" />
+        <attr name="matProg_spinSpeed" format="float" />
+        <attr name="matProg_barSpinCycleTime" format="integer" />
+        <attr name="matProg_circleRadius" format="dimension" />
+        <attr name="matProg_fillRadius" format="boolean" />
+        <attr name="matProg_barWidth" format="dimension" />
+        <attr name="matProg_linearProgress" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="SimpleDraweeView">
+        <attr name="actualImageUri" format="string" />
+        <attr name="actualImageResource" format="reference" />
+        <attr name="fadeDuration" />
+        <attr name="viewAspectRatio" />
+        <attr name="placeholderImage" />
+        <attr name="placeholderImageScaleType" />
+        <attr name="retryImage" />
+        <attr name="retryImageScaleType" />
+        <attr name="failureImage" />
+        <attr name="failureImageScaleType" />
+        <attr name="progressBarImage" />
+        <attr name="progressBarImageScaleType" />
+        <attr name="progressBarAutoRotateInterval" />
+        <attr name="actualImageScaleType" />
+        <attr name="backgroundImage" />
+        <attr name="overlayImage" />
+        <attr name="pressedStateOverlayImage" />
+        <attr name="roundAsCircle" />
+        <attr name="roundedCornerRadius" />
+        <attr name="roundTopLeft" />
+        <attr name="roundTopRight" />
+        <attr name="roundBottomRight" />
+        <attr name="roundBottomLeft" />
+        <attr name="roundTopStart" />
+        <attr name="roundTopEnd" />
+        <attr name="roundBottomStart" />
+        <attr name="roundBottomEnd" />
+        <attr name="roundWithOverlayColor" />
+        <attr name="roundingBorderWidth" />
+        <attr name="roundingBorderColor" />
+        <attr name="roundingBorderPadding" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CardStackView">
+        <attr name="stackOverlapGaps" format="dimension"/>
+        <attr name="stackOverlapGapsCollapse" format="dimension"/>
+        <attr name="stackHeaderHeight" format="dimension"/>
+        <attr name="stackDuration" format="integer"/>
+        <attr name="stackNumBottomShow" format="integer"/>
+        <attr name="stackAnimationType">
+            <flag name="allDown" value="0" />
+            <flag name="upDown" value="1" />
+            <flag name="upDownStack" value="2" />
+        </attr>
+    </declare-styleable>
+
+
+    <declare-styleable name="PatternIndicatorView">
+        <attr name="piv_color" format="color|reference" />
+        <attr name="piv_hitColor" format="color|reference" />
+        <attr name="piv_errorColor" format="color|reference" />
+        <attr name="piv_fillColor" format="color|reference" />
+        <attr name="piv_lineWidth" format="dimension|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="PatternLockerView">
+        <attr name="plv_color" format="color|reference" />
+        <attr name="plv_hitColor" format="color|reference" />
+        <attr name="plv_errorColor" format="color|reference" />
+        <attr name="plv_fillColor" format="color|reference" />
+        <attr name="plv_lineWidth" format="dimension|reference" />
+        <attr name="plv_freezeDuration" format="integer|reference" />
+        <attr name="plv_enableAutoClean" format="boolean|reference" />
+        <attr name="plv_enableSkip" format="boolean|reference" />
+        <attr name="plv_enableHapticFeedback" format="boolean|reference" />
+    </declare-styleable>
+
+    <declare-styleable name="slideswitch">
+        <attr name="themeColor" format="color" />
+        <attr name="isOpen" format="boolean" />
+        <attr name="shape">
+            <enum name="rect" value="1" />
+            <enum name="circle" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="vericationCodeInput">
+        <attr name="box" format="integer" />
+        <attr name="child_h_padding" format="dimension"/>
+        <attr name="child_v_padding" format="dimension"/>
+        <attr name="child_width" format="dimension"/>
+        <attr name="child_height" format="dimension"/>
+        <attr name="padding" format="dimension"/>
+        <attr name="box_bg_focus" format="reference"/>
+        <attr name="box_bg_normal" format="reference"/>
+        <attr name="inputType" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="AlignTextView">
+        <attr name="alignOnlyOneLine" format="boolean"/>
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/base_dimen140"
+        android:background="@drawable/comm_view_dialog_update_top_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/comm_view_rounded_bg_white_radius_6_shape"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen16"
+            android:layout_marginRight="@dimen/base_dimen16"
+            android:textColor="@android:color/black"
+            android:textSize="@dimen/base_dimen_16sp"
+            tools:text="发现新版v2.0.1可以下载啦！" />
+
+        <TextView
+            android:id="@+id/tv_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/base_dimen16"
+            android:layout_marginTop="@dimen/base_dimen8"
+            android:layout_marginRight="@dimen/base_dimen16"
+            android:textColor="#757575"
+            android:textSize="@dimen/base_dimen_14sp"
+            android:visibility="gone"
+            tools:text="新版本大小：5M" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen90"
+            android:layout_marginLeft="@dimen/base_dimen16"
+            android:layout_marginTop="@dimen/base_dimen8"
+            android:layout_marginRight="@dimen/base_dimen16"
+            android:overScrollMode="never">
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lineSpacingMultiplier="1.1"
+                android:textColor="#757575"
+                android:textSize="@dimen/base_dimen_16sp"
+                tools:text="" />
+        </ScrollView>
+
+        <!--<com.azhon.appupdate.dialog.NumberProgressBar
+            android:id="@+id/np_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp" />-->
+
+        <Button
+            android:id="@+id/btn_update"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/base_dimen40"
+            android:layout_marginLeft="@dimen/base_dimen16"
+            android:layout_marginTop="@dimen/base_dimen8"
+            android:layout_marginRight="@dimen/base_dimen16"
+            android:layout_marginBottom="@dimen/base_dimen16"
+            android:background="@drawable/comm_view_rounded_bg_blue_selector"
+            android:text="@string/base_dialog_update_text"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="@dimen/base_dimen2"
+        android:layout_height="@dimen/base_dimen30"
+        android:layout_gravity="center"
+        android:background="@android:color/white" />
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="@dimen/base_dimen30"
+        android:layout_height="@dimen/base_dimen30"
+        android:layout_gravity="center"
+        android:background="@drawable/comm_view_dialog_close_icon" />
+</LinearLayout>

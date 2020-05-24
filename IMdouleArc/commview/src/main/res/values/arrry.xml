@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="base_pic_source">
+        <item>拍照</item>
+        <item>相册</item>
+    </string-array>
+
+    <string-array name="base_certificate_type">
+        <item>一代身份证</item>
+        <item>驾照</item>
+        <item>护照</item>
+        <item>二代身份证</item>
+        <item>护照机读码</item>
+        <item>台胞证</item>
+        <item>港澳通行证</item>
+        <item>其他</item>
+    </string-array>
+
+    <string-array name="base_car_color">
+        <item>银色</item>
+        <item>白色</item>
+        <item>蓝色</item>
+        <item>黑色</item>
+        <item>红色</item>
+        <item>绿色</item>
+        <item>黄色</item>
+        <item>棕色</item>
+        <item>灰色</item>
+        <item>紫色</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_dimen30"
+    android:orientation="horizontal"
+    android:id="@+id/compound">
+    <TextView
+        android:id="@+id/tViewContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+    <EditText
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        android:maxLines="@integer/base_int_1"
+        android:textColor="@color/base_black"
+        android:background="@color/base_transport"
+        android:layout_toLeftOf="@+id/btn"
+        android:layout_toStartOf="@+id/btn"
+        android:cursorVisible="false"
+        android:enabled="false"
+        android:paddingLeft="@dimen/base_dimen5"
+        android:paddingStart="@dimen/base_dimen5"
+        android:paddingRight="@dimen/base_dimen5"
+        android:paddingEnd="@dimen/base_dimen5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="@dimen/base_dimen30"
+        android:layout_height="match_parent"
+        android:padding="@dimen/base_dimen5"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/comm_view_drop_down_icon"
+            android:gravity="center" />
+    </LinearLayout>
+
+
+</RelativeLayout>

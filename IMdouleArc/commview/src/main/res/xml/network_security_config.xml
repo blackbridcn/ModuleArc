@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<network-security-config xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="ResourceName">
+    <!--Http 許可，解決Google規定在Android P [Android 9.0] 中規定的网路数据传输必須使用Https加密-->
+    <base-config cleartextTrafficPermitted="true" />
+</network-security-config>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingDefaultResource">
+
+    <color name="colorPrimary">#2d90ec</color>
+
+    <color name="base_theme_blue">#2d90ec</color>
+    <color name="base_theme_color">#2d90ec</color>
+
+    <color name="base_normal_blue">#2d90ec</color>
+    <color name="base_blue_selected">#0267c5</color>
+    <color name="base_white">#FFFFFF</color>
+
+    <color name="base_red">#FFFF0000</color>
+    <color name="base_green">#FF00FF00</color>
+    <color name="base_blue">#0000FF</color>
+    <color name="base_orange">#FF8000</color>
+    <color name="base_purple">#800080</color>
+
+
+
+    <!-- For settings framework -->
+    <color name="lighter_gray">#ddd</color>
+    <!-- A dark gray, equivalent to 0xffaaaaaa -->
+    <color name="darker_gray">#aaa</color>
+
+    <color name="comm_view_grey">#CFCFCF</color>
+    <color name="comm_view_dark">#FFD6D6D6</color>
+    <!--通用空白背景色-->
+    <color name="base_page_bg">#efeff4</color>
+    <color name="base_color">#f0f0f0</color>
+
+    <color name="base_black">#000000</color>
+    <!--黑字-->
+    <color name="base_text_black">#333333</color>
+    <color name="base_text_color">#333333</color>
+    <!--灰字-->
+    <color name="base_text_grey">#A1A1A1</color>
+
+    <color name="base_grey_">#e6e6e6</color>
+    <color name="base_gray_light">#EBEBEB</color>
+    <color name="base_gray_line">#F0F0F0</color>
+    <color name="base_grey">#F0F0F0</color>
+
+    <!--透明色-->
+    <color name="base_transport">#00ffffff</color>
+    <!--半透明-->
+    <color name="base_half_transport">#9000</color>
+
+    <color name="base_lighter_gray">#ddd</color>
+    <!-- A dark gray, equivalent to 0xffaaaaaa -->
+    <color name="base_darker_gray">#aaa</color>
+
+    <color name="base_zxing_viewfinder_mask">#a0000000</color>
+    <color name="base_zxing_result_view">#b0000000</color>
+    <color name="base_zxing_possible_result_points">#c0ffff00</color>
+    <color name="base_zxing_viewfinder_frame">#ff000000</color>
+    <color name="base_zxing_viewfinder_laser">#ffff0000</color>
+
+</resources>

@@ -1,0 +1,141 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+
+android {
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+
+        versionCode rootProject.ext.android["libVerCode"]
+        versionName rootProject.ext.android["libVerName"]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = rootProject.ext.android["sourceCompatibility"]
+        targetCompatibility = rootProject.ext.android["targetCompatibility"]
+    }
+
+}
+
+dependencies {
+
+    //
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    //constraintlayout
+    api rootProject.ext.dependencies["constraintlayout"]
+    api rootProject.ext.dependencies["lifecycleExtensions"]
+
+    //navigation
+    api rootProject.ext.dependencies["navigationFragment"]
+    api rootProject.ext.dependencies["navigationUI"]
+
+    //material  support 中design
+    api rootProject.ext.dependencies["material"]
+
+    //appcompat
+    api rootProject.ext.dependencies["appcompat"]
+
+    //V4包
+    api rootProject.ext.dependencies["legacySupportV4"]
+
+    /*recyclerview*/
+    api rootProject.ext.dependencies["recyclerview"]
+
+    //jetbrain注解
+    api rootProject.ext.dependencies["jetbAnnotations"]
+
+    //greendao数据库
+    api rootProject.ext.dependencies["greendao"]
+    api rootProject.ext.dependencies["greendao-generator"]
+
+    /*glide*/
+    api rootProject.ext.dependencies["glide"]
+
+    /*腾讯buglySDK*/
+    api rootProject.ext.dependencies["bugly"]
+    api rootProject.ext.dependencies["bugly-native"]
+
+    /*fastJson*/
+    api rootProject.ext.dependencies["fastjson"]
+
+    /*rxjava2*/
+    api rootProject.ext.dependencies["rxjava"]
+
+    /*rxandroid*/
+    api rootProject.ext.dependencies["rxandroid"]
+
+    /*rxpermissions2*/
+    api rootProject.ext.dependencies["rxpermissions"]
+
+    /*rotrofit*/
+    api rootProject.ext.dependencies["retrofit"]
+    api rootProject.ext.dependencies["retrofit-adapter-rxjava"]
+    api rootProject.ext.dependencies["retrofit-converter-gson"]
+
+    // converter-gson会和Google原生是Gson包 Duplicate class  重复
+    api rootProject.ext.dependencies["retrofit-converter-scalars"]
+
+    /*okhttp3*/
+    api rootProject.ext.dependencies["okhttp3"]
+
+    /*rxlifecycle*/
+    api rootProject.ext.dependencies["rxlifecycle"]
+    api rootProject.ext.dependencies["rxlifecycle-android"]
+    api rootProject.ext.dependencies["rxlifecycle-components"]
+    api rootProject.ext.dependencies["rxlifecycle-android-lifecycle"]
+
+    /*multidex*/
+    api rootProject.ext.dependencies["multidex"]
+
+    //激光推送
+    api rootProject.ext.dependencies["jpush"]
+    api rootProject.ext.dependencies["jcore"]
+
+
+    api 'com.jaeger.statusbarutil:library:1.4.0'
+
+    api 'com.facebook.fresco:fresco:1.10.0'
+
+    api 'org.greenrobot:eventbus:3.1.1'
+    api 'com.clj.fastble:FastBleLib:1.1.1'
+    api 'com.wkp:RuntimePermission:1.0.2'
+
+    api files('libs/nineoldandroids-2.4.0.jar')
+
+    //腾讯X5浏览器内核
+    api files('libs/tbs_sdk_thirdapp_v4.3.0.1148_43697_sharewithdownloadwithfile_withoutGame_obfs_20190805_175505.jar')
+
+    //二维码zxing
+    api files('libs/zxing-3.0.1.jar')
+    //
+    api files('libs/sun.misc.BASE64Decoder.jar')
+
+    //ktx
+    api rootProject.ext.dependencies["androidxCoreKtx"]
+    api rootProject.ext.dependencies["lifecycleViewmodelKtx"]
+    api rootProject.ext.dependencies["kotlin-stdlib-jdk"]
+
+    // 支付宝 SDK AAR 包所需的配置
+    // api(name: 'alipaySdk-15.7.4-20200228192259', ext: 'aar')
+    // debugImplementation because LeakCanary should only run in debug builds.
+    //  api 'com.squareup.leakcanary:leakcanary-android:2.2'
+
+}
+repositories {
+    mavenCentral()
+}

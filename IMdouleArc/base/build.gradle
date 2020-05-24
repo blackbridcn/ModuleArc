@@ -1,0 +1,67 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jakewharton.butterknife'
+apply plugin: 'org.greenrobot.greendao'
+
+android {
+
+    compileSdkVersion rootProject.ext.android["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android["buildToolsVersion"]
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android["targetSdkVersion"]
+
+        versionCode rootProject.ext.android["libVerCode"]
+        versionName rootProject.ext.android["libVerName"]
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = rootProject.ext.android["sourceCompatibility"]
+        targetCompatibility = rootProject.ext.android["targetCompatibility"]
+    }
+
+    greendao {
+        schemaVersion 1//数据库版本号
+        daoPackage 'org.greendao.base'//设置DaoMaster、DaoSession、Dao包名
+        targetGenDir 'src/main/java'//设置DaoMaster、DaoSession、Dao目录
+        //targetGenDirTest：设置生成单元测试目录
+        //generateTests：设置自动生成单元测试用例
+    }
+
+
+    compileOptions {
+        sourceCompatibility = rootProject.ext.android["sourceCompatibility"]
+        targetCompatibility = rootProject.ext.android["targetCompatibility"]
+    }
+
+}
+
+dependencies {
+
+    implementation project(path:':commlibs')
+    implementation project(path:':commview')
+
+    implementation rootProject.ext.dependencies["butterknife"]
+    annotationProcessor rootProject.ext.dependencies["butterknife-compiler"]
+
+    compileOnly rootProject.ext.dependencies["lombok"]
+    annotationProcessor rootProject.ext.dependencies["lombok-compiler"]
+    implementation "androidx.core:core-ktx:1.2.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //implementation project(path: ':skinlibrary')
+}
+
+repositories {
+    mavenCentral()
+}

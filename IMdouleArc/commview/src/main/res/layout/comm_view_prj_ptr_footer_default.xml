@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <org.recyclerview.wrapper.pullrefresh.ProgressWheel
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/progress_wheell"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center_vertical"
+            app:matProg_progressIndeterminate="false"
+            app:matProg_spinSpeed="0.64"
+            app:matProg_barColor="@color/base_blue"
+            app:matProg_barWidth="2dp"
+            app:matProg_rimColor="@color/base_red"
+            app:matProg_rimWidth="2dp" />
+
+
+
+        <TextView
+            android:id="@+id/tv_footer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center_vertical"
+            android:text="上拉加载更多"
+            android:textColor="@color/base_text_black"
+         />
+    </LinearLayout>
+</RelativeLayout>

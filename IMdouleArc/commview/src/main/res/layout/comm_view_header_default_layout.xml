@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/base_dimen50">
+
+    <LinearLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <org.recyclerview.wrapper.pullrefresh.ProgressWheel
+            android:layout_gravity="center_vertical"
+            android:id="@+id/progress_wheel"
+            android:layout_width="@dimen/base_dimen20"
+            android:layout_height="@dimen/base_dimen20"
+            app:matProg_barColor="@color/base_blue"
+            app:matProg_barWidth="@dimen/base_dimen2"
+            app:matProg_progressIndeterminate="false"
+            app:matProg_rimColor="@color/base_red"
+            app:matProg_rimWidth="@dimen/base_dimen2"
+            app:matProg_spinSpeed="0.64"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/tv_header"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/base_dimen25"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical"
+            android:text="下拉以刷新"
+            android:textColor="@color/base_text_black"
+            tools:ignore="MissingConstraints" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

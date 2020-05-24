@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">易卡通</string>
+
+
+    <string name="comm_view_cancel">取 消</string>
+    <string name="comm_view_confirm">确 定</string>
+    <string name="comm_view_commit">提 交</string>
+    <string name="comm_view_add">添加</string>
+    <string name="comm_view_warm_prompt">温馨提示</string>
+
+    <string name="comm_view_shortcut_tip_content">  Android系统设置新增桌面快捷方式时需要用户进行授权，如果您在点击“添加”按钮后，手机桌面没有生成新的快捷图标时，请先在手机"系统设置"-"权限管理"-“应用”-“易卡通”进入权限管理,点击"创建桌面快捷方式"开启权限后，重新点击“添加”创建快捷方式。</string>
+    <string name="comm_view_system_setting">系统设置</string>
+
+    <string name="base_all_password_char">0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz·~.,?/!@#$%^*()_-+=</string>
+    <string name="base_number_char">0123456789</string>
+
+    <string name="base_service_name">Card Service</string>
+    <string name="base_card_title">PEAKE Card</string>
+
+    <string name="base_param_error">参数错误</string>
+    <string name="base_password_error">用户名密码错误</string>
+    <string name="base_login_timeout_error">用户登录超时</string>
+    <string name="base_login_other_error">用户在别处登录</string>
+    <string name="base_member_frozen_error">会员冻结</string>
+    <string name="base_member_not_activate_error">会员未激活</string>
+    <string name="base_device_number_error">设备码不一致</string>
+    <string name="base_pay_type_error">支付方式不支持</string>
+    <string name="base_pay_payed_error">已支付</string>
+    <string name="base_pay_zero_error">支付金额为0</string>
+    <string name="base_wallet_not_exit_error">钱包不存在</string>
+    <string name="base_wechat_reload_error">需要微信重定向</string>
+    <string name="base_comp_not_exits_error">不存在的公司</string>
+    <string name="base_ykt_connect_error">一卡通链接错误</string>
+    <string name="base_ykt_deal_error">一卡通处理错误</string>
+    <string name="base_ykt_offline_error">一卡通离线</string>
+    <string name="base_other_error">其他错误</string>
+    <string name="base_cover_data_error">解析服务端数据错误</string>
+
+    <string name="base_zxing_scan_qr_code">扫码二维码</string>
+    <string name="base_zxing_put_qrcode_in">将二维码放入框内，即可自动扫描</string>
+
+    <string name="base_count_down_text_interval">%1$s秒后再次获取</string>
+    <string name="base_count_down_text_normal">获取验证码</string>
+
+    <string name="base_swippecaptch_success">验证成功</string>
+    <string name="base_swippecaptch_fail">验证失败</string>
+    <string name="base_swippecaptch_tip">拖动下方滑块完成拼图</string>
+
+    <!--无网络Layout-->
+    <string name="base_no_network_tip">哎呦，网络不给力，请设置</string>
+    <string name="base_please_check_network_setting">请检查您手机的网络设置</string>
+    <string name="base_refresh">刷新</string>
+    <string name="base_go_setting">去设置</string>
+
+    <string name="base_permission_title">"易卡通需要以下下权限"</string>
+    <string name="base_permission_open">开启权限</string>
+    <string name="base_permission_exit">退出App</string>
+
+    <string name="base_iconfont_back_left_arrow">&#xe653;</string>
+    <string name="base_iconfont_next_right_arrow">&#xe614;</string>
+
+    <string name="base_ble_no_find_service">未获取到远程蓝牙服务</string>
+    <string name="base_ble_no_find_uuid_service">未获取到远程蓝牙UUID服务</string>
+    <string name="base_ble_read_remote_msg_erro">读取远程Ble信息异常</string>
+    <string name="base_ble_param_error">参数错误</string>
+    <string name="base_ble_service_state_erro">连接远程蓝牙服务状态异常</string>
+    <string name="base_ble_write_state_erro">发送数据蓝牙状态异常</string>
+    <string name="base_ble_characteristic_erro">连接远程蓝牙特征character异常</string>
+    <string name="base_conn_failed">断开连接</string>
+    <string name="base_conn_disconnect">连接断开</string>
+    <string name="base_conn_fail_conn">蓝牙连接失败</string>
+    <string name="base_conn_no_find_service_fail">获取蓝牙通信服务失败</string>
+    <string name="base_ble_conn_timeout">连接超时断开</string>
+    <string name="base_ble_operate_more">操作频繁</string>
+    <string name="base_ble_check_fail">蓝牙秘钥校验失败</string>
+    <string name="base_ble_return_msg_read_fail">获取读卡器回文消息失败</string>
+    <string name="base_ble_read_ble_msg_lose">读卡器回文数据丢包</string>
+    <string name="base_ble_return_unknow_error">操作失败,未知错误</string>
+    <string name="base_ble_return_msg_parse_fail">读卡器回文解析失败</string>
+    <string name="base_ble_card_crc_error">卡消息 CRC 校验出错</string>
+    <string name="base_ble_card_unknow_error">卡消息 未知错误</string>
+    <string name="base_ble_card_msg_read_fail">刷卡回文消息部分丢失</string>
+    <string name="base_this_card_no_permission">没有开锁权限</string>
+    <string name="base_conn_ing">正在连接</string>
+    <string name="base_conned">连接成功</string>
+    <string name="base_openning">正在交互</string>
+    <string name="base_operate_failed">操作失败</string>
+    <string name="base_operate_success">操作成功</string>
+    <string name="base_no_devices">无蓝牙设备</string>
+    <string name="base_no_support_ble">该设备不支持蓝牙</string>
+    <string name="base_please_open_ble">请开启蓝牙</string>
+    <string name="base_ble_generate_shake_error">生成加密密钥异常</string>
+    <string name="base_ble_decrypt_shake_error">握手密钥解密异常</string>
+    <string name="base_ble_shake_noequals_error">握手密钥不匹配</string>
+    <string name="base_ble_generate_cardmsg_error">卡号加密异常</string>
+    <string name="base_ble_generate_bleinfo_error">蓝牙数据转换异常</string>
+    <string name="base_ble_title">蓝牙管理</string>
+    <string name="base_ble_refleash">刷新</string>
+    <string name="base_ble_reset_name">修改名称</string>
+    <string name="base_ble_name">蓝牙名称:%1$s</string>
+    <string name="base_ble_rssi">蓝牙强度:%1$d</string>
+    <string name="base_ble_name_is_not_empty">蓝牙名称不能为空</string>
+    <string name="base_ble_name_out_len">蓝牙名称太长</string>
+    <string name="base_ble_resetinfo_ok">修改成功</string>
+    <string name="base_ble_resetinfo_error">修改失败</string>
+    <string name="base_ble_resetinfo_crc_error">CRC校验失败</string>
+    <string name="base_ble_check_link">链路检查</string>
+    <string name="base_ble_check_link_comm_error">获取链路命令异常</string>
+    <string name="base_ble_check_link_ok">Ble链路畅通</string>
+    <string name="base_ble_check_link_erroe">Ble链路异常</string>
+
+    <string name="base_dialog_update_text">立即更新</string>
+
+
+    <string name="comm_view_no_support_ble">该设备不支持蓝牙</string>
+    <string name="comm_view_please_open_ble">请开启蓝牙</string>
+
+    <string name="comm_view_password_strong_tip">密码强度 </string>
+
+    <string name="comm_view_count_down_text_interval">%1$s秒后再次获取</string>
+    <string name="comm_view_count_down_text_normal">获取验证码</string>
+
+
+    <string name="comm_view_default_text">默认</string>
+
+    <string name="comm_view_brvah_app_name">Library</string>
+    <string name="comm_view_brvah_loading">正在加载中...</string>
+    <string name="comm_view_brvah_load_failed">加载失败，请点我重试</string>
+    <string name="comm_view_brvah_load_end">没有更多数据</string>
+    <string name="comm_view_http_error_tip">网络繁忙，请稍后再试！</string>
+    <string name="comm_view_exit_apk_title">退出</string>
+    <string name="comm_view_exit_apk_content">确定退出易卡通?</string>
+
+    <string name="comm_view_province">省份</string>
+
+    <string name="base_list_empty_data">哎呦,没有数据呀! \n刷新啦！</string>
+    <string name="base_list_empty_data_again">哎呦，现在还没有数据呀! \n下拉刷新一下吧！</string>
+
+    <string name="comm_view_compay">SHENZHEN PEAKE TECHNOLOGY CO.,LTD.</string>
+
+</resources>

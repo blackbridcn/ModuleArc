@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/base_transport"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/root_layout"
+        android:layout_width="wrap_content"
+        android:minWidth="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/comm_view_rounded_card_shape_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/base_dimen15"
+        android:paddingTop="@dimen/base_dimen15"
+        android:paddingRight="@dimen/base_dimen15"
+        android:paddingBottom="@dimen/base_dimen25">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="请选择访客组权限"
+            android:maxLines="@integer/base_int_2"
+            android:layout_marginTop="@dimen/base_dimen5"
+            android:paddingLeft="@dimen/base_dimen15"
+            android:paddingRight="@dimen/base_dimen15"
+            android:textAllCaps="false"
+            android:textColor="@color/base_text_black"
+            android:textSize="@dimen/base_dimen_18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/base_dimen10"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_phone"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitXY"
+                    />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="@dimen/base_dimen15">
+
+                    <TextView
+                        android:id="@+id/tv_titles"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/iv_phone"
+                        android:text="存储权限"
+                        android:textColor="@color/base_text_black"
+                        android:textSize="@dimen/base_dimen_16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_content"
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_below="@+id/tv_title"
+                        android:layout_toRightOf="@+id/iv_phone"
+                        android:maxLines="@integer/base_int_3"
+                        android:text="存储账号信息、实现离线开锁等功能" />
+                </LinearLayout>
+            </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/base_dimen10">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/base_dimen15"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_negative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen5"
+                android:layout_marginRight="@dimen/base_dimen5"
+                android:layout_weight="@integer/base_int_1"
+                android:background="@drawable/comm_view_rounded_bg_white_selector"
+                android:gravity="center"
+                android:paddingTop="@dimen/base_dimen3"
+                android:paddingBottom="@dimen/base_dimen3"
+                android:text="@string/comm_view_cancel"
+                android:textSize="@dimen/base_dimen_16sp" />
+            <TextView
+                android:id="@+id/tv_positive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/base_dimen5"
+                android:layout_marginRight="@dimen/base_dimen5"
+                android:layout_weight="@integer/base_int_1"
+                android:background="@drawable/comm_view_rounded_bg_white_selector"
+                android:gravity="center"
+                android:paddingTop="@dimen/base_dimen3"
+                android:paddingBottom="@dimen/base_dimen3"
+                android:text="@string/comm_view_confirm"
+                android:textSize="@dimen/base_dimen_16sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
